@@ -22,14 +22,14 @@ plt.ylabel('Амплитуда')
 plt.grid(True)
 plt.show()
 
+
 # Отображаем график времени от амплитуды звукового сигнала
 times = np.arange(len(signal)) / wav.getframerate()
 plt.figure(figsize=(10, 4))
-plt.plot(times, signal, label='Осциллограмма')
+plt.plot(times, signal)
 plt.title('Осциллограмма сигнала')
 plt.xlabel("Время, c")
 plt.ylabel("Амплитуда")
-plt.legend()
 plt.grid(True)
 plt.show()
 
@@ -45,6 +45,7 @@ plt.xlabel("Частота (Герц)")
 plt.ylabel("Фаза ДПФ")
 plt.grid(True)
 plt.show()
+
 
 print(time.time() - start_time, "seconds")
 
